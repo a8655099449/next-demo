@@ -1,10 +1,17 @@
+import { getPlayList } from '@/api'
 import AppLayouts from '@/components/layouts/AppLayouts'
-import type { NextPage } from 'next'
+import type { GetStaticPaths, NextPage } from 'next'
 import type { AppProps } from 'next/app'
 
-export type NextPageWithLayout = NextPage & {
+export type NextPageWithLayout<T = any> = NextPage<T> & {
   getLayout?: (page: React.ReactElement) => React.ReactNode
 }
+
+
+
+
+
+
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
