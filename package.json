@@ -8,7 +8,8 @@
     "build": "npm run build:static",
     "start": "next start -p 8081",
     "build:static": "next build && next export",
-    "serve": "serve out"
+    "serve": "serve out",
+    "lint": "next lint"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,8 @@
   "devDependencies": {
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.2",
     "typescript": "4.9.4"
   }
 }

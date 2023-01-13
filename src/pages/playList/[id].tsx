@@ -35,18 +35,16 @@ type PlayListDetailProps = {
 }
 const PlayListDetail: NextPage<PlayListDetailProps> = ({ data }): ReactElement => {
 
-  console.log('👴2023-01-12 14:35:22 [id].tsx line:28', data)
   return <div>
     <Head>
       <title>{data.name}</title>
     </Head>
     <h1>{data.name}</h1>
-    <img src={data.coverImgUrl} alt={data.name} width={500} height={500} />
+
+    <Image src={data.coverImgUrl} alt={data.name}  width={500} height={500} />
 
   </div>;
 };
 
 
 export default PlayListDetail;
-
-

@@ -10,8 +10,6 @@ const App: NextPageWithLayout<{
 }> = ({ playList }) => {
 
   const { push, replace, back } = useRouter()
-
-
   return (
     <div>
       <Head>
