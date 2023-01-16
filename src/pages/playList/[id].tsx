@@ -41,7 +41,7 @@ const PlayListDetail: NextPage<PlayListDetailProps> = ({ data }): ReactElement =
     </Head>
     <h1>{data.name}</h1>
 
-    <Image src={data.coverImgUrl} alt={data.name}  width={500} height={500} />
+    <img src={data.coverImgUrl} alt={data.name}  width={500} height={500} />
 
   </div>;
 };

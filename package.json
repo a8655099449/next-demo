@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "npm run build:static",
     "start": "next start -p 8081",
-    "build:static": "next build && next export",
+    "build:static": "next build",
     "serve": "serve out",
     "lint": "next lint"
   },
